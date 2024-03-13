@@ -8,9 +8,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VendasApplication {
 
+    @Autowired
+    @Qualifier("applicationName")
+    private String applicationName;
+
     @GetMapping("/hello")
     public String helloWorld() {
-        return "Hello World";
+        return applicationName;
     }
 
     public static void main(String[] args) {
