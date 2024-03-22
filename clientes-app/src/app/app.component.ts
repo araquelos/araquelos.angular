@@ -4,6 +4,7 @@ import { NavbarComponent } from "./template/navbar/navbar.component";
 import { SidebarComponent } from "./template/sidebar/sidebar.component";
 import jQuery from 'jquery'
 import { HomeComponent } from "./home/home.component";
+//import { ClientesFormComponent } from "./clientes/clientes-form/clientes-form.component";
 
 @Component({
     selector: 'app-root',
