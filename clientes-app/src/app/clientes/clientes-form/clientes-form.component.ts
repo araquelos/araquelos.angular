@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Cliente } from '../cliente';
 
 @Component({
   selector: 'app-clientes-form',
@@ -9,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class ClientesFormComponent {
 
+  cliente!: Cliente;
 }
