@@ -4,14 +4,14 @@ import { NavbarComponent } from "./template/navbar/navbar.component";
 import { SidebarComponent } from "./template/sidebar/sidebar.component";
 import jQuery from 'jquery'
 import { HomeComponent } from "./home/home.component";
-//import { ClientesFormComponent } from "./clientes/clientes-form/clientes-form.component";
+import { FormsModule } from "@angular/forms";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, NavbarComponent, SidebarComponent, HomeComponent]
+    imports: [RouterOutlet, NavbarComponent, SidebarComponent, HomeComponent, FormsModule]
 })
 export class AppComponent implements AfterViewInit {
   title = 'clientes-app';

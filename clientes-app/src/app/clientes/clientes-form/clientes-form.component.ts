@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cliente } from '../cliente';
+import { NgModel } from '@angular/forms';
 
 @Component({
   selector: 'app-clientes-form',
@@ -10,5 +11,19 @@ import { Cliente } from '../cliente';
 })
 export class ClientesFormComponent {
 
-  cliente!: Cliente;
+  cliente: Cliente;
+  nome: String = 'Fulano';
+
+  constructor() {
+    this.cliente = new Cliente();
+    this.cliente.nome = "Raquel";
+  }
+
+  ngOnInit(): void {
+
+  }
+
+  clicar() {
+    console.log('Cliquei!')
+  }
 }
